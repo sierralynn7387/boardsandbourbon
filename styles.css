@@ -30,17 +30,16 @@
   }
   
 /*-------------Header-------------*/
-  
+
   .main-nav {
     width: 100%;
     background: black;
-    min-height: 30px;
-    padding: 10px;
+    min-height: 10px;
+    padding: 5px;
     position: fixed;
     text-align: center;
   }
   .nav {
-    display: flex;
     justify-content: space-around;
     font-weight: 700;
     list-style-type: none;
@@ -50,13 +49,16 @@
 
   .nav li {
     padding: 5px 10px 10px 10px;
+    display: block;
+    width: 100%;
   }
+
 
   /*-------------BNB Logo-------------*/
   .banner {
 	  color: black;
     background: white;
-    padding-top: 60px;
+    padding-top: 80px;
     font-size: 1.5em;
 
   }
@@ -110,25 +112,39 @@
       Media Queries
 *************************/
 
+/*-------------Small Size Screens-------------*/
+@media only screen and (min-width: 600px) {
+ .nav {
+  display: flex;
+ }
+ 
+  .nav a {
+    float: left;
+    width: auto;
+    margin: 0 0 0 5%;
+    padding: 25px 1%;
+    margin-bottom: 0;
+  }
 
-  @media screen and (min-width: 720px) {
-    
-    .flex {
-        display: flex;
-        max-width: 1200px;
-        justify-content: space-around;
-        margin: 0 auto;
-    }
+  .nav li {
+    margin-left: 0;
+    width: auto;
+    display: inline-block;
+  }
+
+
+}
+  /*-------------Medium Size Screens-------------*/
+@media only screen and (min-width: 768px),
+       only screen and (min-width: 700px) and (orientation: landscape) {
   
-    header {
-      min-height: 450px;
-    }
   
-    .nav {
+    .nav .main-nav {
       max-width: 1200px;
+      
     }
   
-    .nav .name {
+    .nav .name  {
       display: block;
       margin-right: auto;
       color: white;
