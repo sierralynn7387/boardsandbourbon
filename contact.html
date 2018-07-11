@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Boards &amp; Bourbon</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body>
+<!-- JS message that populates at top of page - confirms form submitted-->
+    <div id="submitMessage">
+        Your message has been sent!
+    </div>
+
+<!-- Main Header-->
+    <div class="main-nav">
+		<ul class="nav">
+
+			<li><a href="index.html">Home</a></li>
+			<li><a href="aboutus.html">About Us</a></li>
+			<li><a href="faq.html">FAQ</a></li>
+			<li><a href="library.html">Library</a></li>
+			<li><a href="events.html">Events</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="hire.html">Join Our Team!</a></li>
+		</ul>
+	</div>
+
+<!-- Contact Form-->
+<div class="contactForm">
+<form>
+    
+    <fieldset>
+        <p>We would love to hear from you!</p>
+
+            <label for="name">Full Name:</label>
+            <input type = "text" id="name" name= "user_name">
+            <br>
+
+            <label for="email">Email:</label>
+            <input type = "email" id="mail" name="user_email">
+            <br>
+
+            <label for="subject">Subject:</label>
+            <input type = "text" id="subject" name= "email_subject">
+            <br>
+            
+            <label for="message">Message:</label>
+            <textarea id="text" name="text"></textarea>
+            <br>
+
+            <button id="submitButton" class=btn>Submit</button>
+                        
+         </fieldset>
+    </form>
+    </div>
+    <script src="jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="contact.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
