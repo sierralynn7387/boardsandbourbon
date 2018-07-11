@@ -1,0 +1,89 @@
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  color: white;
+  background-color: #4d4d4d;
+}
+
+.intro{
+ text-align: center;
+ font-size: 1.25em;
+ padding-left: 20%;
+ padding-right: 20%;
+ 
+}
+
+/*-------------Header to match home page-------------*/
+.main-nav {
+  width: 100%;
+  background: black;
+  min-height: 30px;
+  padding: 10px;
+  text-align: center;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+.nav li {
+  padding: 5px 10px 10px 10px;
+}
+
+  /*-------------Header Link Styles to match home page------------- */
+  
+  a {
+    text-decoration: none;
+    color: #ff6600;
+  }
+  a:hover {
+    color: white;
+  }
+  
+h1 {
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
+
+@media screen and (min-width: 480px) {
+
+  header {
+    
+  }
+
+  .nav {
+    max-width: 1200px;
+  }
+
+  .nav .name {
+    display: block;
+    margin-right: auto;
+    color: white;
+  }
+
+  main {
+    padding-top: 50px;
+  }
+
+  main p {
+    line-height: 1.6em;
+  }
+
+  footer {
+    background: black;
+    color: white;
+    font-size: 1.3em;
+    padding: 2em 0;
+
+  }
+
+  
+
+}
+
+

@@ -13,6 +13,11 @@
     background: white;
     
   }
+  .woodBackground{
+    background-color: #ff6600;
+  }
+
+  
 
   /*-------------Link Styles-------------*/
   
@@ -52,13 +57,39 @@
 	  color: black;
     background: white;
     padding-top: 60px;
+    font-size: 1.5em;
 
   }
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  width: 50%;
+  border-color: black;
+  text-align: left;
+  border: solid 1px;
+  outline: none;
+  transition: 0.4s;
+}
 
-    /*-------------Information above footer-------------*/
+/* Add a background color to the button if it is clicked on, and when you hover */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel (answers).*/
+.panel {
+  background-color: white;
+  width: 70%;
+  padding-left: 28%;
+  text-align: left;
+  display: none;
+  overflow: hidden;
+}
+/*-------------Information above footer on main page-------------*/
   .col{
     display: inline-block;
-    background-color: #ff6600;
     margin-right: -4px;
     width: 50%;
   }
@@ -75,7 +106,9 @@
 
 
   
-  /*-------------Styles for larger screens-------------*/
+/*************************
+      Media Queries
+*************************/
 
 
   @media screen and (min-width: 720px) {
